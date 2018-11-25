@@ -1,0 +1,138 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<link rel="stylesheet" href="Invoice.css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row" style="background-color:powderblue;">
+        <div class="col-xs-12">
+            <div class="invoice-title">
+                <h2>Invoice</h2><h5>Order # 12345</h5>
+            </div>
+            <hr>
+            <div class="row" >
+                <div class="col-xs-6">
+                    <address>
+                        <strong>Billed To:</strong><br>
+                        Gerry Byrne<br>
+                        1234 Any Street<br>
+                        Any Park<br>
+                        Belfast, BT1 ANY
+                    </address>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <address>
+                        <strong>Shipped To:</strong><br>
+                        Mr G Byrne<br>
+                        1234 Any Street<br>
+                        Any Park<br>
+                        Belfast, BT1 ANY
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <address>
+                        <strong>Payment Method:</strong><br>
+                        Visa ending **** 1234<br>
+                        gbyrne@email.com
+                    </address>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <address>
+                        <strong>Order Date:</strong><br>
+                        September 17, 2018<br><br>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Order summary</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr class="warning">
+                                <td><strong>Code</strong></td>
+                                <td class="text-left"><strong>Item</strong></td>
+                                <td class="text-left"><strong>Quantity</strong></td>
+                                <td class="text-right"><strong>Price</strong></td>
+                                <td class="text-right"><strong>Total</strong></td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!-- foreach ($order->lineItems as $line) or some such thing here -->
+                            <tr class="danger">
+                                <td>R5544</td>
+                                <td class="text-left">Big Red Book</td>
+                                <td class="text-left">5</td>
+                                <td class="text-right">$20.00</td>
+                                <td class="text-right">$100.00</td>
+                            </tr>
+                            <tr class="success">
+                                <td>B5544</td>
+                                <td class="text-left">Big Black Book</td>
+                                <td class="text-left">10</td>
+                                <td class="text-right">$20.00</td>
+                                <td class="text-right">$200.00</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>F5544</td>
+                                <td class="text-left">Big Green Book</td>
+                                <td class="text-left">2</td>
+                                <td class="text-right">$25.00</td>
+                                <td class="text-right">$50.00</td>
+                            </tr>
+                            <tr>
+                                <td class="thick-line"></td>
+                                <td class="thick-line"></td>
+                                <td class="thick-line"></td>
+                                <td class="thick-line text-right"><strong>Subtotal</strong></td>
+                                <td class="thick-line text-right">$670.99</td>
+                            </tr>
+                            <tr>
+                                <td class="no-line"></td>
+                                <td class="no-line"></td>
+                                <td class="no-line"></td>
+                                <td class="no-line text-right"><strong>Shipping</strong></td>
+                                <td class="no-line text-right">$15</td>
+                            </tr>
+                            <tr>
+                                <td class="no-line"></td>
+                                <td class="no-line"></td>
+                                <td class="no-line"></td>
+                                <td class="no-line text-right"><strong>Total</strong></td>
+                                <td class="thick-line text-right">$685.99</td>
+                            </tr>
+                            <tr>
+                                <td class="no-line"></td>
+                                <td class="no-line"></td>
+                                <td class="no-line"></td>
+                                <td class="no-line"></td>
+                                <td class="thick-line"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
