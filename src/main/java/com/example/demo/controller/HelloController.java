@@ -71,6 +71,7 @@ public class HelloController
 //    return xmlresource;
   }
 
+
   @RequestMapping(value = "/texthtml", method = RequestMethod.GET)
   @ResponseBody
 //  public String sayHelloHTMLParameters(@RequestParam(value ="name", required=false, defaultValue="ANYBODY") String name,
