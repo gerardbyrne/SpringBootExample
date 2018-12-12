@@ -22,7 +22,6 @@ public class HelloController
     return "info";
   }
 
-
   // Here we use @GetMapping which has a path attached to it
   @GetMapping("/invoice")
   public String getInvoice() {
@@ -70,7 +69,6 @@ public class HelloController
 //    return xmlresource;
   }
 
-
   @RequestMapping(value = "/texthtml", method = RequestMethod.GET)
   @ResponseBody
 //  public String sayHelloHTMLParameters(@RequestParam(value ="name", required=false, defaultValue="ANYBODY") String name,
@@ -97,5 +95,4 @@ public class HelloController
             + "<body><h1>" + name + "<br>" + response + "</br></h1></body>" + "</html>";
 
   }
-
 }
